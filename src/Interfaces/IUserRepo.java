@@ -8,6 +8,7 @@ import java.util.List;
  * Интерфейс взаимодействия с базой клиентов
  */
 public interface IUserRepo {
+
     /**
      * Создать нового пользователя
      *
@@ -56,4 +57,5 @@ public interface IUserRepo {
      * @return
      */
     boolean delete(User client);
+    
 }

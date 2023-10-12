@@ -10,6 +10,7 @@ import java.util.List;
  * Класс репозиторий для имитации работы с базой данных
  */
 public class UserRepository implements IUserRepo {
+    
     private static UserRepository clientRepository;
     private List<User> clients;
 
@@ -94,4 +95,5 @@ public class UserRepository implements IUserRepo {
         }
         return false;
     }
+    
 }

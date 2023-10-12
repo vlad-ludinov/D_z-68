@@ -11,6 +11,7 @@ import java.util.List;
  * Основной класс клиентского приложения.
  */
 public class Start extends EnterData {
+
     // Связь с основной логикой осуществляется через интерфейс ICustomer.
     private ICustomer customer;
     private int ticketRouteNumber;
@@ -27,6 +28,7 @@ public class Start extends EnterData {
             printMessageLine("To login\t\t\tenter 1\nTo register\t\t\tenter 2\nTo exit\t\t\t\tenter 0");
             System.out.print("Enter your choice > ");
             int choice = 0;
+
             try {
                 choice = inputInt(0, 2);
             } catch (RuntimeException ex) {
@@ -81,6 +83,7 @@ public class Start extends EnterData {
         System.out.println("=====================================================================================");
         System.out.print("Enter the system... ");
         customer = new Customer();
+
         try {
             customer.setUser(Authentication.authentication(customer.getUserProvider(), userName, passwordHash));
         } catch (RuntimeException ex) {
@@ -115,6 +118,7 @@ public class Start extends EnterData {
         System.out.print("Register the system... ");
         customer = new Customer();
         int id;
+        
         try {
             id = customer.getUserProvider().createClient(userName, passwordHash, cardNumber);
             customer.setUser(Authentication.authentication(customer.getUserProvider(), userName, passwordHash));
@@ -280,4 +284,5 @@ public class Start extends EnterData {
         System.out.println(message);
         System.out.println("=====================================================================================");
     }
+    
 }

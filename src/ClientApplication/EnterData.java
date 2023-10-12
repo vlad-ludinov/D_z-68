@@ -10,6 +10,7 @@ import java.util.Scanner;
  * Абстрактный класс валидации вводимых данных
  */
 public abstract class EnterData {
+
     /**
      * Метод ввода и валидации целого числа в диапазоне
      *
@@ -88,6 +89,7 @@ public abstract class EnterData {
         Scanner in = new Scanner(System.in);
         String str;
         Date date;
+
         try {
             str = in.nextLine();
         } catch (Exception ex) {
@@ -103,4 +105,5 @@ public abstract class EnterData {
         }
         return date;
     }
+    
 }

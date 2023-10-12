@@ -8,6 +8,7 @@ import java.util.List;
  * Интерфейс взаимодействия с базой билетов
  */
 public interface ITicketRepo {
+
     /**
      * Создать новый билет
      *
@@ -39,4 +40,5 @@ public interface ITicketRepo {
      * @return
      */
     boolean delete(Ticket ticket);
+    
 }

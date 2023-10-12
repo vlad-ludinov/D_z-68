@@ -10,6 +10,7 @@ import java.util.List;
  * Класс - провайдер для работы с базой данных клиентов
  */
 public class UserProvider {
+
     private IUserRepo clientRepository;
 
     /**
@@ -57,4 +58,5 @@ public class UserProvider {
         var clients = clientRepository.readAll();
         return clients;
     }
+    
 }

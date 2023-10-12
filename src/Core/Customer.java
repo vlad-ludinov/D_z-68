@@ -12,6 +12,7 @@ import java.util.List;
  * Класс, содержащий основную логику покупки билетов
  */
 public class Customer implements ICustomer {
+
     private TicketProvider ticketProvider;
     private CashProvider cashProvider;
     private UserProvider userProvider;
@@ -80,4 +81,5 @@ public class Customer implements ICustomer {
         }
         return result;
     }
+    
 }

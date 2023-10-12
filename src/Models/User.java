@@ -1,5 +1,6 @@
 package Models;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -7,7 +8,12 @@ import java.util.Objects;
  */
 public class User {
 
-
+    private int id;
+    private String userName;
+    private int hashPassword;
+    private int phone;
+    private List<String> benefits;
+    private long cardNumber;
 
     public User(int id, String userName, int hashPassword, long cardNumber) {
         this.id = id;
@@ -15,7 +21,6 @@ public class User {
         this.hashPassword = hashPassword;
         this.cardNumber = cardNumber;
     }
-
 
     @Override
     public String toString() {
@@ -33,7 +38,6 @@ public class User {
         return this.equals(client);
     }
 
-
     public boolean equals(User client) {
         return id == client.id && hashPassword == client.hashPassword && cardNumber == client.cardNumber && userName.equals(client.userName);
     }
@@ -42,4 +46,21 @@ public class User {
     public int hashCode() {
         return Objects.hash(id, userName, hashPassword, cardNumber);
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public int getHashPassword() {
+        return hashPassword;
+    }
+
+    public long getCardNumber() {
+        return cardNumber;
+    }
+    
 }

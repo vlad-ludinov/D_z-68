@@ -7,7 +7,6 @@ import java.util.Date;
  */
 public class Ticket{
 
-
     private long id;
     private int price;
     private Date date;
@@ -26,7 +25,6 @@ public class Ticket{
         this.isValid = isValid;
     }
 
-
     @Override
     public String toString() {
         return "Ticket" +
@@ -36,7 +34,6 @@ public class Ticket{
                 ", Date " + date +
                 ", " + (isValid ? "Free" : "Busy");
     }
-
 
     public String toPrint() {
         return "Ticket" +
@@ -59,7 +56,6 @@ public class Ticket{
         return this.equals((Ticket) obj);
     }
 
-
     public boolean equals(Ticket ticket) {
         boolean isIt = ticket != null
                 && ticket.getRouteNumber() == this.routeNumber
@@ -74,46 +70,37 @@ public class Ticket{
         return false;
     }
 
-
     public long getId() {
         return id;
     }
-
 
     public int getPrice() {
         return price;
     }
 
-
     public Date getDate() {
         return date;
     }
-
 
     public int getZoneStart() {
         return zoneStart;
     }
 
-
     public int getZoneStop() {
         return zoneStop;
     }
-
 
     public short getType() {
         return type;
     }
 
-
     public int getRouteNumber() {
         return routeNumber;
     }
 
-
     public int getPlace() {
         return place;
     }
-
 
     public boolean getValid() {
         return isValid;
@@ -130,4 +117,5 @@ public class Ticket{
     public void setValid(boolean isValid) {
         this.isValid = isValid;
     }
+    
 }

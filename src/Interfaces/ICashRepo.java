@@ -4,6 +4,7 @@ package Interfaces;
  * Интерфейс взаимодействия с базой банковских операций
  */
 public interface ICashRepo {
+
     /**
      * Метод проведения транзакции
      *
@@ -13,4 +14,5 @@ public interface ICashRepo {
      * @return результат выполнения операции
      */
     boolean transaction(int payment, long cardFrom, long cardTo);
+    
 }

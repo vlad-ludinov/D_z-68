@@ -10,6 +10,7 @@ import java.util.*;
  * Класс репозиторий для имитации работы с базой данных
  */
 public class TicketRepository implements ITicketRepo {
+
     private static TicketRepository ticketRepository;
     private List<Ticket> tickets;
 
@@ -83,4 +84,5 @@ public class TicketRepository implements ITicketRepo {
             tickets.add(new Ticket(roureNumber, i, price, date, true));
         }
     }
+    
 }

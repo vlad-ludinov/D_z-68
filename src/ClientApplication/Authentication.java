@@ -7,6 +7,7 @@ import Models.User;
  * Класс аутентификации пользователя
  */
 public class Authentication {
+
     /**
      * Метод производит аутентификацию
      *
@@ -23,4 +24,5 @@ public class Authentication {
             throw new RuntimeException("Authentication fail");
         }
     }
+    
 }

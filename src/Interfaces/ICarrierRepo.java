@@ -6,6 +6,7 @@ import Models.Carrier;
  * Интерфейс взаимодействия с базой перевозчиков
  */
 public interface ICarrierRepo {
+
     /**
      * Получить модель перевозчика из базы по ID
      *
@@ -13,4 +14,5 @@ public interface ICarrierRepo {
      * @return
      */
     Carrier read(int id);
+    
 }

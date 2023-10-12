@@ -10,6 +10,7 @@ import java.util.List;
  * Класс репозиторий для имитации работы с базой данных перевозчиков
  */
 public class CarrierRepository implements ICarrierRepo {
+
     private static CarrierRepository carrierRepository;
     private List<Carrier> carriers;
 
@@ -36,4 +37,5 @@ public class CarrierRepository implements ICarrierRepo {
         }
         throw new RuntimeException("A carrier with this ID not found");
     }
+    
 }

@@ -11,6 +11,7 @@ import java.util.List;
  * Интерфейс взаимодействия с клиентским приложением
  */
 public interface ICustomer {
+
     List<Ticket> getSelectedTickets();
 
     void setSelectedTickets(List<Ticket> selectedTickets);
@@ -39,4 +40,5 @@ public interface ICustomer {
      * @throws RuntimeException
      */
     List<Ticket> searchTicket(Date date, int route) throws RuntimeException;
+    
 }
